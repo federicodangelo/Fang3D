@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DBD41D1-5A9D-4089-A567-B78D3552FFD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fang3D</RootNamespace>
+    <AssemblyName>Fang3D</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=0.9.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Compilado\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.Utilities, Version=0.9.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Compilado\OpenTK.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fang3D\Attributes\CustomAttributes.cs" />
+    <Compile Include="Fang3D\Reflection\AccesorValor.cs" />
+    <Compile Include="Fang3D\Components\Base\ScriptBase.cs" />
+    <Compile Include="Fang3D\Components\Base\Component.cs" />
+    <Compile Include="Fang3D\Components\Base\Entity.cs" />
+    <Compile Include="Fang3D\Reflection\FieldValue.cs" />
+    <Compile Include="Fang3D\Components\LightSource.cs" />
+    <Compile Include="Fang3D\Components\ParticleSystem.cs" />
+    <Compile Include="Fang3D\Components\Render\Render.cs" />
+    <Compile Include="Fang3D\Components\Base\Script.cs" />
+    <Compile Include="Fang3D\Components\Base\Transformation.cs" />
+    <Compile Include="Fang3D\Components\Camara.cs" />
+    <Compile Include="Fang3D\Components\ComponentFactory.cs" />
+    <Compile Include="Fang3D\Components\Render\MeshRender.cs" />
+    <Compile Include="Fang3D\Components\Render\ParticleRender.cs" />
+    <Compile Include="Fang3D\Console.cs" />
+    <Compile Include="Fang3D\Fang3DException.cs" />
+    <Compile Include="Fang3D\Input.cs" />
+    <Compile Include="Fang3D\InternalFunctions.cs" />
+    <Compile Include="Fang3D\Physics\Collisionable.cs" />
+    <Compile Include="Fang3D\Physics\CollisionableOBB.cs" />
+    <Compile Include="Fang3D\Physics\PhysicsEngine.cs" />
+    <Compile Include="Fang3D\Reflection\IReflectable.cs" />
+    <Compile Include="Fang3D\Resources\Importer\MeshImporter.cs" />
+    <Compile Include="Fang3D\Resources\Importer\Texture2DImporter.cs" />
+    <Compile Include="Fang3D\Resources\Mesh.cs" />
+    <Compile Include="Fang3D\Graphics\IRender.cs" />
+    <Compile Include="Fang3D\Graphics\RenderOpenGL.cs" />
+    <Compile Include="Fang3D\Math.cs" />
+    <Compile Include="Fang3D\Resources\Resource.cs" />
+    <Compile Include="Fang3D\Resources\ScriptResource.cs" />
+    <Compile Include="Fang3D\Resources\StaticResources.cs" />
+    <Compile Include="Fang3D\Resources\Texture2D.cs" />
+    <Compile Include="Fang3D\Scenes\Scene.cs" />
+    <Compile Include="Fang3D\Scenes\Serializer\SceneSerializer.cs" />
+    <Compile Include="Fang3D\Scenes\Serializer\SerializableDictionary.cs" />
+    <Compile Include="Fang3D\Scenes\Serializer\SerializedScene.cs" />
+    <Compile Include="Fang3D\Time.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fang3D\Graphics\Base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

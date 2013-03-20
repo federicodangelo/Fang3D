@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<Scene version="1">
+  <Components>
+    <Component type="Fang3D.Entity" id="9">
+      <Values>
+        <Name val="Luz Escenario" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="3">
+      <Values>
+        <Name val="Jugador" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="22">
+      <Values>
+        <Name val="pared" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="26">
+      <Values>
+        <Name val="Agrupador Naves" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="28">
+      <Values>
+        <Name val="Nave Enemiga" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="36">
+      <Values>
+        <Name val="Light" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="41">
+      <Values>
+        <Name val="Nave Enemiga" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="47">
+      <Values>
+        <Name val="Nave Enemiga" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="53">
+      <Values>
+        <Name val="Nave Enemiga" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="59">
+      <Values>
+        <Name val="Nave Enemiga" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="65">
+      <Values>
+        <Name val="Nave Enemiga" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Entity" id="71">
+      <Values>
+        <Name val="Nave Enemiga" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="2">
+      <Values>
+        <Parent />
+        <LocalTranslation val="0,0,0" />
+        <LocalRotation val="0,0,0,1" />
+        <LocalScale val="1,1,1" />
+        <Enabled val="True" />
+        <Entity val="4294967295" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="10">
+      <Values>
+        <Parent val="2" />
+        <LocalTranslation val="0,11.84375,26.39067" />
+        <LocalRotation val="0,0,0,1" />
+        <LocalScale val="1,1,1" />
+        <Enabled val="True" />
+        <Entity val="9" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Camara" id="7">
+      <Values>
+        <Name val="Camara" />
+        <Enabled val="True" />
+        <Entity />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="8">
+      <Values>
+        <Parent val="2" />
+        <LocalTranslation val="0,9.609375,22.43755" />
+        <LocalRotation val="0,0,0,1" />
+        <LocalScale val="1,1,1" />
+        <Enabled val="True" />
+        <Entity val="7" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="23">
+      <Values>
+        <Parent val="2" />
+        <LocalTranslation val="0,17.71325,0" />
+        <LocalRotation val="0,0,0,1" />
+        <LocalScale val="20,1,5" />
+        <Enabled val="True" />
+        <Entity val="22" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="27">
+      <Values>
+        <Parent val="2" />
+        <LocalTranslation val="0,9.84375,20.35942" />
+        <LocalRotation val="0,0,0,1" />
+        <LocalScale val="1,1,1" />
+        <Enabled val="True" />
+        <Entity val="26" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="30">
+      <Values>
+        <Parent val="27" />
+        <LocalTranslation val="-3.251034E-07,5.5625,-20.35942" />
+        <LocalRotation val="0,0,1,-4.371139E-08" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="28" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="4">
+      <Values>
+        <Parent val="2" />
+        <LocalTranslation val="0,0,0" />
+        <LocalRotation val="0,0,0,1" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="3" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="37">
+      <Values>
+        <Parent val="4" />
+        <LocalTranslation val="0,151.5625,6.625007E-06" />
+        <LocalRotation val="0.7071068,0,0,0.7071068" />
+        <LocalScale val="99.99999,100,100" />
+        <Enabled val="True" />
+        <Entity val="36" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="43">
+      <Values>
+        <Parent val="27" />
+        <LocalTranslation val="2.890625,5.5625,-20.35942" />
+        <LocalRotation val="0,0,1,-4.371139E-08" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="41" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="49">
+      <Values>
+        <Parent val="27" />
+        <LocalTranslation val="5.34375,5.5625,-20.35942" />
+        <LocalRotation val="0,0,1,-4.371139E-08" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="47" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="55">
+      <Values>
+        <Parent val="27" />
+        <LocalTranslation val="-2.359375,5.5625,-20.35942" />
+        <LocalRotation val="0,0,1,-4.371139E-08" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="53" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="61">
+      <Values>
+        <Parent val="27" />
+        <LocalTranslation val="-4.703125,5.5625,-20.35942" />
+        <LocalRotation val="0,0,1,-4.371139E-08" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="59" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="67">
+      <Values>
+        <Parent val="27" />
+        <LocalTranslation val="-7.046875,5.5625,-20.35942" />
+        <LocalRotation val="0,0,1,-4.371139E-08" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="65" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Transformation" id="73">
+      <Values>
+        <Parent val="27" />
+        <LocalTranslation val="7.890625,5.5625,-20.35942" />
+        <LocalRotation val="0,0,1,-4.371139E-08" />
+        <LocalScale val="0.01,0.01,0.01" />
+        <Enabled val="True" />
+        <Entity val="71" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="5">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara" />
+        <Enabled val="True" />
+        <Entity val="3" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="24">
+      <Values>
+        <Mesh val="pared" />
+        <Texture />
+        <Enabled val="True" />
+        <Entity val="22" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="31">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara2" />
+        <Enabled val="True" />
+        <Entity val="28" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="44">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara2" />
+        <Enabled val="True" />
+        <Entity val="41" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="50">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara2" />
+        <Enabled val="True" />
+        <Entity val="47" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="56">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara2" />
+        <Enabled val="True" />
+        <Entity val="53" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="62">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara2" />
+        <Enabled val="True" />
+        <Entity val="59" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="68">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara2" />
+        <Enabled val="True" />
+        <Entity val="65" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.MeshRender" id="74">
+      <Values>
+        <Mesh val="nave" />
+        <Texture val="cara2" />
+        <Enabled val="True" />
+        <Entity val="71" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.LightSource" id="11">
+      <Values>
+        <Priority val="1" />
+        <SpotCutoff val="45" />
+        <SpotExponent val="0" />
+        <Distance val="0" />
+        <Quadratic val="False" />
+        <AmbientColor val="0.5,0.5,0.5,1" />
+        <DiffuseColor val="0,0,0,1" />
+        <LightType val="OMNI" />
+        <Enabled val="True" />
+        <Entity val="9" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.LightSource" id="38">
+      <Values>
+        <Priority val="1" />
+        <SpotCutoff val="5" />
+        <SpotExponent val="0" />
+        <Distance val="0" />
+        <Quadratic val="False" />
+        <AmbientColor val="0.3,0.3,0.3,1" />
+        <DiffuseColor val="0,0,0,1" />
+        <LightType val="SPOT" />
+        <Enabled val="True" />
+        <Entity val="36" />
+        <renderMode val="Normal" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="25">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="22" />
+        <Size val="1,1,1" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="35">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="28" />
+        <Size val="100,125,50" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="46">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="41" />
+        <Size val="100,125,50" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="52">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="47" />
+        <Size val="100,125,50" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="58">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="53" />
+        <Size val="100,125,50" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="64">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="59" />
+        <Size val="100,125,50" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="70">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="65" />
+        <Size val="100,125,50" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.CollisionableOBB" id="76">
+      <Values>
+        <Enabled val="True" />
+        <Entity val="71" />
+        <Size val="100,125,50" />
+        <RenderInEditor val="True" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="34">
+      <Values>
+        <__ScriptName__ val="ControlNaveEnemiga" />
+        <Enabled val="True" />
+        <Entity val="28" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="1" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="45">
+      <Values>
+        <__ScriptName__ val="ControlNaveEnemiga" />
+        <Enabled val="True" />
+        <Entity val="41" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="1" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="51">
+      <Values>
+        <__ScriptName__ val="ControlNaveEnemiga" />
+        <Enabled val="True" />
+        <Entity val="47" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="1" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="57">
+      <Values>
+        <__ScriptName__ val="ControlNaveEnemiga" />
+        <Enabled val="True" />
+        <Entity val="53" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="1" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="63">
+      <Values>
+        <__ScriptName__ val="ControlNaveEnemiga" />
+        <Enabled val="True" />
+        <Entity val="59" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="1" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="69">
+      <Values>
+        <__ScriptName__ val="ControlNaveEnemiga" />
+        <Enabled val="True" />
+        <Entity val="65" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="1" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="75">
+      <Values>
+        <__ScriptName__ val="ControlNaveEnemiga" />
+        <Enabled val="True" />
+        <Entity val="71" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="1" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="40">
+      <Values>
+        <__ScriptName__ val="MovedorNaves" />
+        <Enabled val="True" />
+        <Entity val="26" />
+        <max val="7" />
+        <vel val="5" />
+      </Values>
+    </Component>
+    <Component type="Fang3D.Script" id="148">
+      <Values>
+        <__ScriptName__ val="ControlTeclasYDisparo" />
+        <Enabled val="True" />
+        <Entity val="3" />
+        <velocidadX val="10" />
+        <velocidadY val="10" />
+        <disparosPorSegundo val="5" />
+      </Values>
+    </Component>
+  </Components>
+</Scene>

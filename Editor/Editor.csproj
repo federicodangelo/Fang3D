@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11C752FF-69F0-4959-86DD-541AE9502DAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fang3D.Editor</RootNamespace>
+    <AssemblyName>Editor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Compilado\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Compilado\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=0.9.7.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="OpenTK.Utilities, Version=0.9.6.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ArbolEntidades.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ArbolEntidades.Designer.cs">
+      <DependentUpon>ArbolEntidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorBitmap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorBitmap.Designer.cs">
+      <DependentUpon>EditorBitmap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditorReflectable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditorReflectable.Designer.cs">
+      <DependentUpon>EditorReflectable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditorMultiplesReflectables.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditorMultiplesReflectables.Designer.cs">
+      <DependentUpon>EditorMultiplesReflectables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorColor4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorColor4.Designer.cs">
+      <DependentUpon>EditorColor4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorNumber.Designer.cs">
+      <DependentUpon>EditorNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorString.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorString.Designer.cs">
+      <DependentUpon>EditorString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorType.Designer.cs">
+      <DependentUpon>EditorType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ListaRecursos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ListaRecursos.Designer.cs">
+      <DependentUpon>ListaRecursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\VistaEscenaConArbol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VistaEscenaConArbol.Designer.cs">
+      <DependentUpon>VistaEscenaConArbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorBoolean.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorBoolean.Designer.cs">
+      <DependentUpon>EditorBoolean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorEnum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorEnum.Designer.cs">
+      <DependentUpon>EditorEnum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorQuaternion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorQuaternion.Designer.cs">
+      <DependentUpon>EditorQuaternion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorVector3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EditoresValores\EditorVector3.Designer.cs">
+      <DependentUpon>EditorVector3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsole.Designer.cs">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorRecursos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ArbolEntidades.resx">
+      <DependentUpon>ArbolEntidades.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorBitmap.resx">
+      <DependentUpon>EditorBitmap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditorReflectable.resx">
+      <DependentUpon>EditorReflectable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditorMultiplesReflectables.resx">
+      <DependentUpon>EditorMultiplesReflectables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorColor4.resx">
+      <DependentUpon>EditorColor4.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorNumber.resx">
+      <DependentUpon>EditorNumber.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorString.resx">
+      <DependentUpon>EditorString.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorType.resx">
+      <DependentUpon>EditorType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorBoolean.resx">
+      <DependentUpon>EditorBoolean.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorEnum.resx">
+      <DependentUpon>EditorEnum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorQuaternion.resx">
+      <DependentUpon>EditorQuaternion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\EditoresValores\EditorVector3.resx">
+      <DependentUpon>EditorVector3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ListaRecursos.resx">
+      <DependentUpon>ListaRecursos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\VistaEscenaConArbol.resx">
+      <DependentUpon>VistaEscenaConArbol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsole.resx">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\VistaEscena.resx">
+      <DependentUpon>VistaEscena.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controles\VistaEscena.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VistaEscena.Designer.cs">
+      <DependentUpon>VistaEscena.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fang3D\Fang3D.csproj">
+      <Project>{7DBD41D1-5A9D-4089-A567-B78D3552FFD2}</Project>
+      <Name>Fang3D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonPause.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
