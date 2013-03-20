@@ -6,3 +6,6 @@ Technological demo of a Unity 3D like environment made in C# using Visual Studio
 It uses OpenTK for rendering (C# binding for OpenGL)
 
 Most of the source code is in spanish, sorry!
+
+Screenshot:
+![Screenshot](/Screenshots/ss1.png)
